@@ -5,7 +5,6 @@ import csv
 import matplotlib.pyplot as plt
 import matplotlib
 matplotlib.use('Agg')
-# Configure matplotlib for UTF-8 support
 matplotlib.rcParams['font.family'] = 'DejaVu Sans'
 matplotlib.rcParams['axes.unicode_minus'] = False
 import numpy as np
@@ -15,7 +14,6 @@ RESULTS_DIR = Path("./results")
 DATA_FILE = RESULTS_DIR / "benchmark_results.csv"
 PLOT_DIR = RESULTS_DIR
 
-# Professional color scheme
 COLORS = {
     'sequential': '#1f4788',
     'parallel_2': '#d62728',
@@ -84,7 +82,6 @@ def create_execution_time_plot(data, output_file):
     ax.grid(True, alpha=0.3, linestyle='--')
     ax.set_axisbelow(True)
     
-    # Improve layout
     fig.tight_layout()
     plt.savefig(output_file, dpi=300, bbox_inches='tight', facecolor='white', edgecolor='none')
     print(f"✓ Salvat: {output_file}")
@@ -151,7 +148,6 @@ def create_speedup_plot(data, output_file):
         ax.plot(sizes_4, speedup_4, marker=MARKER_STYLE['parallel_4'], linewidth=2.5, 
                 markersize=9, label='4 procese', color=COLORS['parallel_4'], markeredgewidth=1.5)
     
-    # Ideal speedup lines
     ax.axhline(y=2, color='#cccccc', linestyle='--', linewidth=2, alpha=0.7, label='Ideal 2x')
     if speedup_4:
         ax.axhline(y=4, color='#999999', linestyle=':', linewidth=2, alpha=0.7, label='Ideal 4x')

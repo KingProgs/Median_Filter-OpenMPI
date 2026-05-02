@@ -8,7 +8,6 @@ mkdir -p "$OUTPUT_DIR"
 WINDOW_SIZE=5
 TEST_SIZES=(128 256 512 1024)
 
-# Clear and add header
 echo "Type,Width,Height,Processes,Time(seconds),Throughput(Mpixels/s)" > "$DATA_FILE"
 
 echo "==== Sequential Benchmarks ===="
