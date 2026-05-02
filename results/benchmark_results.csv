@@ -1,0 +1,9 @@
+Type,Width,Height,Processes,Time(seconds),Throughput(Mpixels/s)
+Sequential,256,256,1,0.122680,0.53
+Sequential,512,512,1,0.412705,0.64
+Sequential,1024,1024,1,1.884617,0.56
+Sequential,2048,2048,1,6.362975,0.66
+Parallel,256,256,2,0.043717,1.50
+Parallel,512,512,2,0.258499,1.01
+Parallel,1024,1024,2,1.136245,0.92
+Parallel,2048,2048,2,4.270756,0.98

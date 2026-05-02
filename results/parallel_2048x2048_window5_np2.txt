@@ -1,0 +1,7 @@
+Parallel Median Filter Results (OpenMPI)
+Number of processes: 2
+Image dimensions: 2048 x 2048
+Window size: 5
+Execution time (seconds): 4.270756
+Pixels processed: 4194304
+Throughput (M pixels/s): 0.98

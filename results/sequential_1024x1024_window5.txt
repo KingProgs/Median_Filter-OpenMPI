@@ -1,0 +1,6 @@
+Sequential Median Filter Results
+Image dimensions: 1024 x 1024
+Window size: 5
+Execution time (seconds): 1.884617
+Pixels processed: 1048576
+Throughput (M pixels/s): 0.56
