@@ -125,7 +125,6 @@ Aceasta va:
 3. Testa cu 1, 2 și 4 procese
 4. Colecta rezultatele în `results/benchmark_results.csv`
 5. Genera grafice de analiză în `results/`
-6. Genera raport PDF în `report/`
 
 ## Fișiere Generate
 
@@ -155,10 +154,9 @@ make clean            # Ștergere fișiere compilate
 make distclean        # Ștergere tot + rezultate
 make help             # Afișare ajutor
 
-# Benchmark și raport
+# Benchmark
 make benchmark        # Benchmark complet + grafice
 python3 generate_plots.py   # Generare grafice din rezultate
-python3 generate_report.py  # Generare raport PDF
 
 # Vizualizare rezultate
 cat results/benchmark_results.csv
@@ -237,7 +235,7 @@ which mpicc
 
 ```bash
 # Python script errors
-python3 --version  # Must be 3.7+
+python3 --version  #3.7+
 pip3 install matplotlib reportlab numpy
 
 # Permission issues
